@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.car-anime {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/sky.jpg);
+}
+
+.highway {
+    background-image: url(../assets/road.jpg);
+    height: 200px;
+    width: 200%;
+    position: absolute;
+    bottom: 0px;
+
+    animation-name: road;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes road {
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+.city {
+    background-image: url(../assets/city_alt.png);
+    height: 400px;
+    position: absolute;
+    width: 150%;
+    bottom: 200px;
+
+    animation-name: city;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes city {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+.car {
+    width: 300px;
+    position: absolute;
+    bottom: 53px;
+    left: 30%;
+
+    animation-name: car;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.car img {
+    width: 100%;
+}
+
+@keyframes car {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.wheels {
+    position: absolute;
+    bottom: 78px;
+    left: 25%
+}
+
+.wheels img {
+    width: 41px;
+    height: 41px;
+
+    animation-name: wheel;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.front-wheel {
+    position: absolute;
+    left: 276px;
+    bottom: -3px;
+}
+
+.back-wheel {
+    position: absolute;
+    left: 132px;
+    bottom: 0;
+}
+
+@keyframes wheel {
+    100% {
+        transform: translateY(2px) rotate(360deg);
+    }
+}
+
+.superman {
+    position: absolute;
+    width: 350px;
+    bottom: 300px;
+    z-index: 1;
+
+    animation-name: superman;
+    animation-duration: 4s;
+    /* animation-timing-function: ease-in-out; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.superman img {
+    width: 100%;
+}
+
+@keyframes superman {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(200px);
+    }
+    50% {
+        transform: translateX(1200px);
+    }
+  
+
+    100% {
+        transform: translateX(1600px);
+    }
+}
+
+
+
+.dragon {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    bottom: 250px;
+    right: 200px;
+
+    animation-name: dragon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.dragon img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes dragon {
+    25% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translate(20px, 20px);
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    
+    100%{
+        transform: translateX(1500px);
+    }
+
+}
+
+.fire {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 100px;
+    right: 500px;
+
+    animation-name: fire;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+}
+
+.fire img {
+    width: 135%;
+    height: 100%;
+}
+
+@keyframes fire {
+
+}
